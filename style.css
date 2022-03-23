@@ -74,7 +74,7 @@ body {
     border-radius: 8px;
 }
 .small img:hover {
-    opacity: 0.5;
+    opacity: 0.7;
     cursor: zoom-in;
 }
 .info {
@@ -85,7 +85,10 @@ body {
     align-items: flex-start;
     justify-content: center;
 }
-
+.info-wrap {
+    position: relative;
+    left: 80px;
+}
 .info-top {
     width: 75%;
 }
@@ -121,6 +124,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .buttons h4 {
     background-color: rgb(241, 240, 240);
@@ -131,15 +135,28 @@ body {
     justify-content: center;
     border: none;
     border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif;
 }
 .buttons div {
     background-color: orangered;
+    height: 60%;
     font-size: 12px;
     padding: 0 60px;
     color: white;
     display: flex;
+    flex-direction: row;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+}
+.buttons div:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.hover:hover {
+    cursor: pointer;
+}
+.buttons div i, p {
+    padding: 0 12px;
 }
